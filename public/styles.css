@@ -1,0 +1,21 @@
+.proxy-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.photoModal {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+  display: inline;
+  font-size: 15px;
+  color: #484848;
+  font-weight: 350;
+  line-height: 1.50em;
+  display: table-cell;
+  padding-left: 15%;
+  padding-right: 15%;
+  vertical-align: top;
+  flex-direction: column;
+  position: relative;
+  top: 10px;
+}
