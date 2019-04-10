@@ -65,6 +65,18 @@ app.get('/api/rooms/:id/searchReviews', (req, response) => {
   });
 });
 
+// info
+app.get('/api/rooms/:id/info', (req, res) => {
+  request(`http://localhost:3001/api/rooms/${req.params.id}/info`, (error, response, body) => {
+    if (error){
+      console.log('working')
+      res.send(404);
+    } else {
+      res.status(200).send(body);
+    }
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server is listening on ${port}`);
 });
